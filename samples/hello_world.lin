@@ -1,0 +1,7 @@
+/* FIRST /* SECOND /* THIRD third */ second */ first */
+// comment in a line
+/* asd
+*/
+fn main() {
+    std.println("\\Hello, \"World\"!");
+}

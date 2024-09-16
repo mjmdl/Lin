@@ -2,6 +2,7 @@
 
 const char *describe_token_kind(Token_Kind kind) {
 	switch (kind) {
+	default:
 	case TOKEN_NONE:
 		return "None";
 	case TOKEN_END_OF_FILE:

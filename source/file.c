@@ -26,7 +26,7 @@ bool read_file(File *file) {
 
 	size_t bytes_read = fread(buffer, sizeof(char), length, handle);
 	fclose(handle);
-	if (bytes_read != length) {
+	if (bytes_read != (size_t)length) {
 		fprintf(stderr, "Could not read contents of file %s: Read %zu out of %zu bytes.\n", file->path, bytes_read, length);
 		free(buffer);
 		return false;
